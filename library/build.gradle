@@ -13,14 +13,17 @@ dependencies {
 }
 
 android {
-    compileSdkVersion rootProject.compileSdkVersion
-    buildToolsVersion "${rootProject.buildToolsVersion}"
+    compileSdkVersion 25
     defaultConfig {
         minSdkVersion "${rootProject.minSdkVersion}"
     }
     lintOptions {
         abortOnError false
     }
+    compileOptions {
+        sourceCompatibility 1.8
+    }
+    buildToolsVersion '25.0.2'
 }
 
 //apply from: '../maven_push.gradle'
